@@ -5,7 +5,7 @@
 ╚══════════════════════════════════╝
 """ 
 # s. Buch, Kapitel 
-# - 2.1, 2.2 (Variablen)
+ #- 2.1, 2.2 (Variablen)
 
 # DATENTYP einer Variable herausfinden:
 # In ANDEREN Programmiersprachen, nicht in PYTHON:
