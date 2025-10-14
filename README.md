@@ -62,3 +62,55 @@ Diese Ordner werden nach Bedarf ergänzt und angepasst.
 - Lernplan festlegen (z. B. wöchentliche Themen, Abschlussprojekt)
 
 Viel Erfolg und Spaß beim Python-Lernen!
+
+## Как запушить изменения на GitHub
+
+1. Перейдите в папку проекта (если ещё не в ней):
+   ```bash
+   cd /путь/к/проекту
+   ```
+
+2. Проверьте текущее состояние файлов:
+   ```bash
+   git status
+   ```
+
+3. Добавьте все изменённые файлы в индекс (или укажите нужные файлы вместо точки):
+   ```bash
+   git add .
+   ```
+
+4. Создайте коммит с коротким и понятным сообщением:
+   ```bash
+   git commit -m "Опишите, что изменили"
+   ```
+   Если Git попросит имя и email, настройте их и повторите коммит:
+   ```bash
+   git config --global user.name "Ваше имя"
+   git config --global user.email "you@example.com"
+   ```
+
+5. Убедитесь, что подключён правильный удалённый репозиторий:
+   ```bash
+   git remote -v
+   ```
+   Если репозиторий ещё не добавлен, выполните:
+   ```bash
+   git remote add origin https://github.com/username/repo.git
+   ```
+
+6. Отправьте изменения в нужную ветку на GitHub (чаще всего `main`):
+   ```bash
+   git push origin main
+   ```
+   Замените `main`, если используете другую ветку.
+
+7. Если Git пишет, что ветка отстаёт, сначала подтяните изменения, решите конфликты и повторите отправку:
+   ```bash
+   git pull origin main
+   git add .
+   git commit -m "Исправил конфликты"
+   git push origin main
+   ```
+
+После успешного `git push` зайдите в репозиторий на GitHub и убедитесь, что новый коммит появился в истории.

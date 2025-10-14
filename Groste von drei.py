@@ -1,28 +1,17 @@
 #  Findet die größte von drei eingegebenen Zahlen.
 
+zahl1 = float (input ("Die erste Zahl ist:\n"))
+zahl2 = float (input ("Die Zweite Zahl ist:\n"))
+zahl3 = float (input ("Die Dritte Zahl ist:\n"))
+if zahl1 > zahl2 and zahl1 > zahl3:
+    print ("Die größte Zahl ist:",zahl1)
+elif zahl2 > zahl1 and zahl2 > zahl3:
+    print ("Die größte Zahl ist:",zahl2)
+elif zahl3 > zahl1 and zahl3 > zahl2:
+    print ("Die größte Zahl ist:",zahl3)
+else:
+    print("Die Zahlen sind gleich oder es gibt mehrere gleiche größte Zahlen.")
 
 
-def main():
-    print("Größte von drei Zahlen")
-    numbers = []
 
-    for index in range(1, 4):
-        raw_value = input(f"Zahl {index}: ")
-        try:
-            number = float(raw_value)
-        except ValueError:
-            print("Bitte nur Zahlen eingeben.")
-            return
-        numbers.append(number)
-
-    largest = numbers[0]
-    for number in numbers[1:]:
-        if number > largest:
-            largest = number
-
-    print(f"Die größte Zahl ist: {largest}")
-
-
-if __name__ == "__main__":
-    main()
 
